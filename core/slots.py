@@ -36,7 +36,7 @@ class Slot_GameObject(object):
             return True
 
         if self._cards:
-            if card.index - 1 == self._cards[-1].index and card.color != self._cards[-1].color:
+            if card.index - 1 == self._cards[-1].index and card.suit == self._cards[-1].suit:
                 return True
 
         return False
